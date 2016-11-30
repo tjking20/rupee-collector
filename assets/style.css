@@ -1,0 +1,38 @@
+body{
+	background-color: #87D9FA;
+}
+
+button{
+	height: 70px;
+	width: 70px;
+}
+
+
+#targetNumber, h3{
+	height: 50px;
+	width: 50px;
+	background-color: white;
+	float: left;
+	font-size: 40px;
+	font-weight: 1000;
+	padding-left: 10px;
+}
+#crystals{
+	clear: both;
+}
+
+#button1{
+	background-color: red;
+}
+
+#button2{
+	background-color: blue;
+}
+
+#button3{	
+	background-color: white;
+}
+
+#button4{
+	background-color: yellow;
+}
