@@ -8,14 +8,16 @@ button{
 }
 
 
+
 #targetNumber, h3{
 	height: 50px;
-	width: 50px;
+	width: 70px;
 	background-color: white;
 	float: left;
 	font-size: 40px;
 	font-weight: 1000;
 	padding-left: 10px;
+	margin-right: 10px;
 }
 #crystals{
 	clear: both;
