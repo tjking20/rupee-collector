@@ -1,5 +1,11 @@
 body{
 	background-color: #87D9FA;
+	background-image: url(images/zelda-background.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	color: white;
+	font-size: 20px;
+	font-family: 'Aref Ruqaa', serif;
 }
 
 button{
@@ -7,34 +13,97 @@ button{
 	width: 70px;
 }
 
+h1{
+	position: absolute;
+	left: 500px;
+	font-weight: 10000;
+	font-size: 50px;
+}
+
+.btn{
+	height:100px;
+}
 
 
-#targetNumber, h3{
+#targetNumber, #score{
 	height: 50px;
 	width: 70px;
-	background-color: white;
-	float: left;
+
 	font-size: 40px;
 	font-weight: 1000;
-	padding-left: 10px;
 	margin-right: 10px;
-}
-#crystals{
-	clear: both;
+	text-align: right;
 }
 
-#button1{
-	background-color: red;
+
+#targetNumber{
+	position: absolute;
+	left: 592px;
+	top: 270px
+
 }
 
-#button2{
-	background-color: blue;
+#score{
+	position: absolute;
+	left: 592px;
+	top: 450px;
+
 }
 
-#button3{	
-	background-color: white;
+
+#rupees{
+	margin-right: 20px;
+	position: absolute;
+	left: 900px;
+	bottom: 50px;
+
+
+
+}
+#button1, #button2, #button3, #button4{
+	margin-left: 10px;
+	border: none;
+	outline: none;
 }
 
-#button4{
-	background-color: yellow;
+#toggle-button{
+	background: none;
+	font-size: 30px;
+	color: white;
+	width: 175px;
+	outline: none;
+	border: none;
 }
+#toggle-button:hover{
+	background-color: #2A5778;
+	opacity: .5;
+
+}
+
+#instructions{
+ 	background-color: #2A5778; 
+	background: -webkit-radial-gradient(#51A2D3, #2A5778);
+	width: 275px;	
+	line-height: 1.25;
+	padding:20px;
+	border: 3px dashed white;
+	font-size: 18px;
+	font-family: 'Aref Ruqaa', serif;
+
+}
+
+#win-lose{	
+ 	background-color: #2A5778; 
+	background: -webkit-radial-gradient(#51A2D3, #2A5778);
+	width: 250px;	
+	font-size: 24px;
+	line-height: 1.25;
+	padding:20px;
+	border: 3px dashed white;
+	margin-top: 50px;
+	position: absolute;
+	top: 25px;
+	left: 970px;
+
+}
+

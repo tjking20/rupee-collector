@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Crystal-Collector</title>
+	<title>Ruppee-Collector</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="assets/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
 </head>
 <body>
 <div id="container">
-	<h1>Crystals Collector</h1>
+	<h1>Rupee Collector</h1>
+
+	<button value="hidden" id="toggle-button">Instructions</button>
 
 	<div id="instructions">
-		<p> Instructions will go here.</p>
+			<p>
+			<em>You will be given a random number at the start of the game. <br><br>
+			-There are four rupees below. By clicking on a ruppee you will add a specific amount of points to your total score.<br><br>
+			-You win the game by matching your total score to the random number. <br><br>
+			-The value of each crystal is hiddien from you until you click on it.<br><br>
+			-Each time the game resets, the game will change the values of each crystal.<br><br>
+			<strong>Good Luck!</strong></em>
+			</p>
+		</div>
+
+
+
+<!-- results panel  -->
+	<div id="win-lose"> 
+		<div id="wins">Wins: -</div>
+		<div id="losses">Losses: -</div>
 	</div>
 
 <!-- displays the number that the client will be trying to match -->
 	<div id="targetNumber">0</div>
 
-
-<!-- results panel  -->
-	<span id="win-lose"> 
-		<div id="wins">Wins: -</div>
-		<div id="losses">Losses: -</div>
-	</span>
-
 	<br>
 
-
-	<!-- crystal buttons -->
-
-	<div id="crystals">
-		<button class="btn" id="button1" value="1"></button>
-		<button class="btn" id="button2" value="10"></button>
-		<button class="btn" id="button3" value="5"></button>
-		<button class="btn" id="button4" value="20"></button>
-	</div>
-
 	<!-- current score -->
-
 	<div id="score">
-		<p>Your total score is:</p>
-		<h3>0</h3>
+		<h3>000</h3>
 	</div>
+
+	<!-- rupee buttons -->
+	<div id="rupees">
+		<input type="image" src="assets/images/red-rupee.png" class="btn" id="button1" value="1" />
+		<input type="image" src="assets/images/green-rupee.png" class="btn" id="button2" value="10" />
+		<input type="image" src="assets/images/gold-rupee.png" class="btn" id="button3" value="5" />
+		<input type="image" src="assets/images/purple-rupee.png" class="btn" id="button4" value="20" />
+	</div>
+
 </div>
+
+<!-- <audio id="zelda-dub" type="audio" src="https://api.spotify.com/v1/audio-features/{0zUFf9ucfBkddRHT60dx8H}"></audio> -->
 
 
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script> -->
 <script type="text/javascript" src= "assets/script.js"></script>
 </body>
 </html>
