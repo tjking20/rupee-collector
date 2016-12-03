@@ -53,13 +53,6 @@ $(document).on("click", ".btn", function(){
 });
 
 
-// $("#instructions-toggle").on("click", function(){
-// 	$("#instructions").slideToggle("slow");	
-	   
-
-$("#instructions-toggle").on("click", function(){
-	$("#instructions").toggle("slow");
-});
 
 
 

@@ -59,11 +59,14 @@ h1{
 
 
 
+
 }
+
 #button1, #button2, #button3, #button4{
 	margin-left: 10px;
 	border: none;
 	outline: none;
+
 }
 
 #toggle-button{
@@ -89,6 +92,8 @@ h1{
 	border: 3px dashed white;
 	font-size: 18px;
 	font-family: 'Aref Ruqaa', serif;
+	position: absolute;
+	top: 126px;
 
 }
 
@@ -102,8 +107,8 @@ h1{
 	border: 3px dashed white;
 	margin-top: 50px;
 	position: absolute;
-	top: 25px;
-	left: 970px;
+	top: 85px;
+	left: 980px;
 
 }
 
