@@ -7,7 +7,7 @@ var losses = 0;
 var targetNumber = '';
 var value = '';
 
-
+$("p").hide;
 
 // The reset function assigns a random target number and random values to all rupees 
 function reset(){
@@ -53,10 +53,9 @@ $(document).on("click", ".btn", function(){
 });
 
 
-
-
-
-
+$("#toggle-button").on("click", function(){
+        $("p").slideToggle(750);
+    });
 
 
 

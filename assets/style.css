@@ -8,10 +8,6 @@ body{
 	font-family: 'Aref Ruqaa', serif;
 }
 
-button{
-	height: 70px;
-	width: 70px;
-}
 
 h1{
 	position: absolute;
@@ -23,7 +19,10 @@ h1{
 .btn{
 	height:100px;
 }
+.btn:hover{
+	height: 120px;
 
+}
 
 #targetNumber, #score{
 	height: 50px;
@@ -63,27 +62,40 @@ h1{
 }
 
 #button1, #button2, #button3, #button4{
-	margin-left: 10px;
+	margin-left: 15px;
 	border: none;
 	outline: none;
 
+
 }
+
 
 #toggle-button{
+	
 	background: none;
-	font-size: 30px;
-	color: white;
-	width: 175px;
-	outline: none;
+	width: 200px;	
+	line-height:0px;
+	padding-bottom: 30px;
+	padding-top: 10px;
 	border: none;
+	outline: none;
+	font-size: 35px;
+	font-family: 'Aref Ruqaa', serif;
+	opacity: 0.5;
+	text-shadow: rgb(224, 224, 224) 1px 1px 0px;
+	position: initial;
 }
+
+
 #toggle-button:hover{
-	background-color: #2A5778;
-	opacity: .5;
-
+	opacity: 0.5;
+	color: #96A0FC;
+	text-shadow: rgb(224, 224, 224) 1px 1px 0px;
 }
 
-#instructions{
+
+
+.instructions{
  	background-color: #2A5778; 
 	background: -webkit-radial-gradient(#51A2D3, #2A5778);
 	width: 275px;	
@@ -94,7 +106,6 @@ h1{
 	font-family: 'Aref Ruqaa', serif;
 	position: absolute;
 	top: 126px;
-
 }
 
 #win-lose{	
