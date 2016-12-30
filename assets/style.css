@@ -24,6 +24,11 @@ h1{
 
 }
 
+.hide{
+	display: none;
+
+}
+
 #targetNumber, #score{
 	height: 50px;
 	width: 70px;
@@ -45,7 +50,7 @@ h1{
 #score{
 	position: absolute;
 	left: 592px;
-	top: 450px;
+	top: 390px;
 
 }
 

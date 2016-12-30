@@ -7,7 +7,7 @@ var losses = 0;
 var targetNumber = '';
 var value = '';
 
-$("p").hide;
+
 
 // The reset function assigns a random target number and random values to all rupees 
 function reset(){
@@ -18,7 +18,7 @@ function reset(){
 
 	function randomVal(btn){
 		value = Math.floor(Math.random() * (10 - 1) + 1);
-		$(btn).val(value);
+		$(btn).attr("data-value", value);
 	}
 
 	randomOption();
@@ -26,7 +26,7 @@ function reset(){
 	randomVal("#button2");
 	randomVal("#button3");
 	randomVal("#button4");
-	score = 000;
+	score = 0;
 	$("h3").html("0");
 
 }
@@ -35,7 +35,7 @@ reset();
 
 // this onclick event effects the btn class by adding their values into the player's score.
 $(document).on("click", ".btn", function(){
-	score += parseInt($(this).attr("value"));
+	score += parseInt($(this).attr("data-value"));
 	$("h3").html(score);
 
 	// Conditional increments wins and losses, and resets the game.
@@ -53,9 +53,15 @@ $(document).on("click", ".btn", function(){
 });
 
 
+
+
 $("#toggle-button").on("click", function(){
+       	// $("p").removeClass("hide");
         $("p").slideToggle(750);
+
     });
+
+
 
 
 

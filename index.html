@@ -3,7 +3,6 @@
 <head>
 	<title>Ruppee-Collector</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="assets/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
 </head>
@@ -19,7 +18,7 @@
 	<div class="instructions">
 		<button id="toggle-button">Instructions</button>
 		<br>
-		<p>
+		<p class="hide">
 		<em>You will be given a random number at the start of the game. <br><br>
 		-There are four rupees below. By clicking on a ruppee you will add a specific amount of points to your total score.<br><br>
 		-You win the game by matching your total score to the random number. <br><br>
@@ -44,20 +43,18 @@
 
 	<!-- current score -->
 	<div id="score">
-		<h3>000</h3>
+		<h3>00</h3>
 	</div>
 
 	<!-- rupee buttons -->
 	<div id="rupees">
-		<input type="image" src="assets/images/red-rupee.png" class="btn" id="button1" value="1" />
-		<input type="image" src="assets/images/green-rupee.png" class="btn" id="button2" value="10" />
-		<input type="image" src="assets/images/gold-rupee.png" class="btn" id="button3" value="5" />
-		<input type="image" src="assets/images/purple-rupee.png" class="btn" id="button4" value="20" />
+		<img src="assets/images/red-rupee.png" class="btn" id="button1" data-value="1"/>
+		<img src="assets/images/green-rupee.png" class="btn" id="button2" data-value="10" />
+		<img src="assets/images/gold-rupee.png" class="btn" id="button3" data-value="5" />
+		<img src="assets/images/purple-rupee.png" class="btn" id="button4" data-value="20" />
 	</div>
 
 </div>
-
-<!-- <audio id="zelda-dub" type="audio" src="https://api.spotify.com/v1/audio-features/{0zUFf9ucfBkddRHT60dx8H}"></audio> -->
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
