@@ -56,7 +56,6 @@ $(document).on("click", ".btn", function(){
 
 
 $("#toggle-button").on("click", function(){
-       	// $("p").removeClass("hide");
         $("p").slideToggle(750);
 
     });
